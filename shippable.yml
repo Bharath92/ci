@@ -6,6 +6,8 @@ build:
     - echo https://news.ycombinator.com
     - echo http://soccer.reddit.com
     - echo minimallyminimal.com
+  pre_ci_boot:
+    options: "-v /tmp:/tmp"
   ci: 
     - echo https://google.com
     - echo https://news.ycombinator.com

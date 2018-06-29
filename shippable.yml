@@ -1,11 +1,6 @@
 language: none
 
 build:
-  #pre_ci:
-  #  - echo https://google.com
-  #  - echo https://news.ycombinator.com
-  #  - echo http://soccer.reddit.com
-  #  - echo minimallyminimal.com
   ci: 
     - echo https://google.com
     - echo https://news.ycombinator.com

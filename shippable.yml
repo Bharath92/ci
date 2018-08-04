@@ -6,7 +6,8 @@ runtime:
 build:
   ci: 
     - docker ps
-    - docker pull bharath92/gitissues
+    - docker build bharath92/gitissues:not .
+    - docker push bharath92/gitissues:not
 integrations:    
   hub:
       #Docker integration

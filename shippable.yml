@@ -1,10 +1,12 @@
 language: none
 
-env:
-  - test_env="echo lol"
-  - test_env="lo"
-
 build:
   ci: 
-    - eval $test_env
+    - docker ps
+    - docker pull bharath92/gitissues
+integrations:    
+  hub:
+      #Docker integration
+    - integrationName: docker
+      type: dockerRegistryLogin
     

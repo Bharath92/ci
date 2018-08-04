@@ -1,5 +1,8 @@
 language: none
 
+runtime:
+  nodePool: restricted
+
 build:
   ci: 
     - docker ps

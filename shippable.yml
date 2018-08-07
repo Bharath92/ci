@@ -4,14 +4,12 @@ runtime:
   nodePool: default-restricted
 
 build:
-  pre_ci:
-    - echo hi
   ci: 
     - docker ps -a
-#    - docker pull bharath92/gitissues:not
-integrations:    
-  hub:
+    - docker pull bharath92/gitissues:not
+#integrations:    
+#  hub:
       #Docker integration
-    - integrationName: docker
-      type: dockerRegistryLogin
+#    - integrationName: docker
+#      type: dockerRegistryLogin
     

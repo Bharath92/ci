@@ -4,12 +4,15 @@ runtime:
   nodePool: default-restricted
 
 build:
+  pre_ci_boot:
+    image_name: bharath92/gitissues
+    image_tag: not
   ci: 
     - docker ps -a
     - docker pull bharath92/gitissues:not
-integrations:    
-  hub:
+#integrations:    
+#  hub:
       #Docker integration
-    - integrationName: docker
-      type: dockerRegistryLogin
+#    - integrationName: docker
+#      type: dockerRegistryLogin
     

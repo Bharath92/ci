@@ -6,10 +6,10 @@ runtime:
 build:
   ci: 
     - docker ps
-    - docker push bharath92/gitissues:not
-integrations:    
-  hub:
+    - docker pull bharath92/gitissues:not
+#integrations:    
+#  hub:
       #Docker integration
-    - integrationName: invalid-docker
-      type: dockerRegistryLogin
+#    - integrationName: invalid-docker
+#      type: dockerRegistryLogin
     

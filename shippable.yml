@@ -10,9 +10,9 @@ build:
   ci: 
     - docker ps -a
     - docker pull bharath92/gitissues:not
-integrations:    
-  hub:
+#integrations:    
+  #hub:
       #Docker integration
-    - integrationName: docker
-      type: dockerRegistryLogin
+  #  - integrationName: docker
+  #    type: dockerRegistryLogin
     

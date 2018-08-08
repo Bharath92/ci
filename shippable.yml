@@ -4,15 +4,15 @@ runtime:
   nodePool: default-restricted
 
 build:
-  pre_ci_boot:
-    imageName: drydock/aarch64_u16all
-    imageTag: master
+  #pre_ci_boot:
+  #  imageName: drydock/aarch64_u16all
+  #  imageTag: master
   ci: 
     - docker ps -a
     - docker pull bharath92/gitissues:not
-#integrations:    
-#  hub:
+integrations:    
+  hub:
       #Docker integration
-#    - integrationName: docker
-#      type: dockerRegistryLogin
+    - integrationName: docker
+      type: dockerRegistryLogin
     

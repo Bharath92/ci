@@ -1,8 +1,5 @@
 language: none
 
-runtime:
-  nodePool: default-restricted
-
 build:
   #pre_ci_boot:
   #  imageName: drydock/aarch64_u16all
